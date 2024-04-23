@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 3</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <style>
+        .disabled-link{
+            pointer-events: none;
+            color: gray;
+            cursor: not-allowed;
+        }
+        .background{
+            background-image: url("img.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px;
+            width: 100%;
+        }
+        .border:hover{
+            background-color: mediumseagreen;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand bg-secondary-subtle">
+    <div class="container">
+        <a href="#" class="navbar-brand">Name</a>
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+            <li class="nav-item"><a href="#" class="nav-link disabled-link">Disabled</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container m-5">
+    <div class="row">
+        <div class="col-3 h-100 align-self-center" style="border-color: grey">
+            <div class="border border-4 bg-success" style="border-color: grey">Text</div>
+            <div class="border border-4" style="border-color: grey">Text</div>
+            <div class="border border-4" style="border-color: grey">Text</div>
+            <div class="border border-4" style="border-color: grey">Text</div>
+        </div>
+        <div class="col background d-flex align-items-center">
+            <div class=" text-center w-25">
+                <h2>Text</h2>
+                <h4>Text</h4>
+                <button class="btn btn-success">Button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container m-5">
+    <h4 class="text-center">Blogs</h4>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-img" src="img.png">
+                </div>
+                <div class="card-body">
+                    <h5>Datum</h5>
+                    <div>Text Text</div>
+                    <div>Text Text</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-img" src="img.png">
+                </div>
+                <div class="card-body">
+                    <h5>Datum</h5>
+                    <div>Text Text</div>
+                    <div>Text Text</div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-img" src="img.png">
+                </div>
+                <div class="card-body">
+                    <h5>Datum</h5>
+                    <div>Text Text</div>
+                    <div>Text Text</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-secondary-subtle p-4 d-flex justify-content-center">
+    <div class="row">
+        <div class="col">
+            <ul class="list-unstyled">
+                <li>category</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="list-unstyled">
+                <li>category</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="list-unstyled">
+                <li>category</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
